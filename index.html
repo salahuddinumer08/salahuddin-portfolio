@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Salahuddin Umer — SaaS SEO & Digital Marketing Executive</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{brand:{'50':'#eff6ff','100':'#dbeafe','200':'#bfdbfe','400':'#60a5fa','500':'#3b82f6','600':'#2563eb','700':'#1d4ed8','800':'#1e40af','900':'#1e3a8a'}},fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*{scroll-behavior:smooth}
+.gradient-text{background:linear-gradient(135deg,#2563eb 0%,#7c3aed 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-bg{background:linear-gradient(135deg,#0f172a 0%,#1e293b 50%,#1e3a8a 100%)}
+.card-hover{transition:transform .25s ease,box-shadow .25s ease}
+.card-hover:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(37,99,235,.12)}
+.nav-link{position:relative}
+.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#3b82f6;transition:width .3s ease}
+.nav-link:hover::after{width:100%}
+.section-divider{width:48px;height:4px;background:linear-gradient(90deg,#2563eb,#7c3aed);border-radius:2px;display:inline-block}
+.photo-ring{background:linear-gradient(135deg,#3b82f6,#7c3aed,#2563eb);padding:3px;border-radius:50%}
+.timeline-dot{position:relative}
+.timeline-dot::before{content:'';position:absolute;left:-29px;top:8px;width:14px;height:14px;border-radius:50%;background:#2563eb;border:3px solid #dbeafe;box-shadow:0 0 0 3px rgba(37,99,235,.2)}
+.skill-pill{transition:all .2s ease;cursor:default}
+.skill-pill:hover{background-color:#2563eb;color:#fff;transform:translateY(-2px)}
+.aos{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.aos.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+<!-- NAV -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
+<div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+<a href="#hero" class="font-bold text-slate-900 text-lg tracking-tight"><span class="gradient-text">S</span>alahuddin<span class="text-slate-400 font-normal">.</span></a>
+<div class="hidden md:flex items-center gap-8">
+<a href="#about" class="nav-link text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">About</a>
+<a href="#experience" class="nav-link text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Experience</a>
+<a href="#work" class="nav-link text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Work</a>
+<a href="#skills" class="nav-link text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Skills</a>
+<a href="#achievements" class="nav-link text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Wins</a>
+<a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">Contact Me</a>
+</div>
+<button id="mBtn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" onclick="document.getElementById('mMenu').classList.toggle('hidden')">
+<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+</div>
+<div id="mMenu" class="hidden md:hidden border-t border-slate-100 bg-white px-6 py-4 flex flex-col gap-4">
+<a href="#about" class="text-sm font-medium text-slate-600" onclick="document.getElementById('mMenu').classList.add('hidden')">About</a>
+<a href="#experience" class="text-sm font-medium text-slate-600" onclick="document.getElementById('mMenu').classList.add('hidden')">Experience</a>
+<a href="#work" class="text-sm font-medium text-slate-600" onclick="document.getElementById('mMenu').classList.add('hidden')">Work</a>
+<a href="#skills" class="text-sm font-medium text-slate-600" onclick="document.getElementById('mMenu').classList.add('hidden')">Skills</a>
+<a href="#achievements" class="text-sm font-medium text-slate-600" onclick="document.getElementById('mMenu').classList.add('hidden')">Wins</a>
+<a href="#contact" class="bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg text-center" onclick="document.getElementById('mMenu').classList.add('hidden')">Contact Me</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero-bg min-h-screen flex items-center pt-20">
+<div class="max-w-6xl mx-auto px-6 py-20 w-full">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="flex-1 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-400/30 text-blue-200 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+<span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+Available for SaaS SEO Consulting &amp; Full-Time Roles
+</div>
+<h1 class="text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-4">
+Salahuddin<br/>
+<span style="background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Umer</span>
+</h1>
+<p class="text-blue-200 text-lg font-semibold tracking-wide uppercase mb-6">SaaS SEO &amp; Digital Marketing Executive</p>
+<p class="text-slate-300 text-xl leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">I turn SaaS products into organic growth engines — through technical SEO, topical authority, high-authority link acquisition, and AI-search optimisation.</p>
+<div class="flex flex-wrap gap-4 justify-center lg:justify-start mb-10">
+<div class="flex items-center gap-2 text-slate-300 text-sm"><svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>2+ Years SaaS SEO</div>
+<div class="flex items-center gap-2 text-slate-300 text-sm"><svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>300+ Link Partnerships</div>
+<div class="flex items-center gap-2 text-slate-300 text-sm"><svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>GEO &amp; AEO Specialist</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<a href="#work" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-lg shadow-blue-500/30 text-center">View My Work</a>
+<a href="#contact" class="border border-slate-500 hover:border-blue-400 text-slate-200 hover:text-white font-semibold px-8 py-4 rounded-xl transition-all text-center hover:bg-white/5">Contact Me</a>
+<a href="https://www.linkedin.com/in/salahuddin-umer" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 border border-slate-600 hover:border-blue-400 text-slate-300 hover:text-blue-400 font-medium px-6 py-4 rounded-xl transition-all">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+LinkedIn
+</a>
+</div>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-6">
+<div class="photo-ring">
+<div class="w-56 h-56 lg:w-72 lg:h-72 rounded-full overflow-hidden bg-slate-700">
+<img src="https://lh3.googleusercontent.com/d/1IdxvqlTJtXUdnMb1IYW2Te05llMBHg4D" alt="Salahuddin Umer" class="w-full h-full object-cover object-top" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-600 to-purple-700&quot;&gt;&lt;span class=&quot;text-6xl font-bold text-white&quot;&gt;SU&lt;/span&gt;&lt;/div&gt;'"/>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-3 w-full max-w-xs">
+<div class="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center border border-white/10"><div class="text-2xl font-bold text-white">25%</div><div class="text-xs text-slate-300 mt-0.5">Traffic Growth</div></div>
+<div class="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center border border-white/10"><div class="text-2xl font-bold text-white">+10</div><div class="text-xs text-slate-300 mt-0.5">DA Points</div></div>
+<div class="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center border border-white/10"><div class="text-2xl font-bold text-white">300+</div><div class="text-xs text-slate-300 mt-0.5">Links Built</div></div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-16">
+<a href="#about" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition-colors">
+<span class="text-xs font-medium">Scroll to explore</span>
+<svg class="w-5 h-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-slate-50">
+<div class="max-w-6xl mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-16 items-start">
+<div class="lg:w-1/3 aos">
+<div class="flex items-center gap-3 mb-4"><div class="section-divider"></div><span class="text-blue-600 text-sm font-semibold uppercase tracking-widest">About Me</span></div>
+<h2 class="text-4xl font-extrabold text-slate-900 leading-tight mt-4">Building organic growth for SaaS — not just rankings.</h2>
+</div>
+<div class="lg:w-2/3 aos">
+<p class="text-slate-600 text-lg leading-relaxed mb-6">I'm a SaaS SEO and Digital Marketing Executive with 2+ years of experience driving measurable organic growth for B2B SaaS platforms. My work sits at the intersection of technical precision, content strategy, and authority-building — with a focus on outcomes that compound over time.</p>
+<p class="text-slate-600 text-lg leading-relaxed mb-8">I specialise in Generative Engine Optimisation (GEO) and Answer Engine Optimisation (AEO) — ensuring brand visibility inside Google's AI Overviews and LLM citation ecosystems. I build topical authority through structured content clusters, execute high-authority link acquisition campaigns, and use GSC + Usermaven data to continuously sharpen strategy.</p>
+<div class="grid sm:grid-cols-2 gap-4">
+<div class="flex gap-3 p-4 bg-white rounded-xl border border-slate-100 shadow-sm card-hover">
+<div class="flex-shrink-0 w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+<div><div class="font-semibold text-slate-800 text-sm">Full-Funnel SEO Ownership</div><div class="text-slate-500 text-sm mt-0.5">Technical audits to content creation to link building — end-to-end.</div></div>
+</div>
+<div class="flex gap-3 p-4 bg-white rounded-xl border border-slate-100 shadow-sm card-hover">
+<div class="flex-shrink-0 w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+<div><div class="font-semibold text-slate-800 text-sm">AI-First Content Strategy</div><div class="text-slate-500 text-sm mt-0.5">GEO &amp; AEO optimisation for Google AI Overviews and LLM citations.</div></div>
+</div>
+<div class="flex gap-3 p-4 bg-white rounded-xl border border-slate-100 shadow-sm card-hover">
+<div class="flex-shrink-0 w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+<div><div class="font-semibold text-slate-800 text-sm">Authority Link Acquisition</div><div class="text-slate-500 text-sm mt-0.5">Scaled outreach to 300+ publishers, editorial placements &amp; digital PR.</div></div>
+</div>
+<div class="flex gap-3 p-4 bg-white rounded-xl border border-slate-100 shadow-sm card-hover">
+<div class="flex-shrink-0 w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+<div><div class="font-semibold text-slate-800 text-sm">Data-Driven Decisions</div><div class="text-slate-500 text-sm mt-0.5">GSC + Usermaven analytics translated into quarterly growth strategy.</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-24 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<div class="mb-14 aos">
+<div class="flex items-center gap-3 mb-3"><div class="section-divider"></div><span class="text-blue-600 text-sm font-semibold uppercase tracking-widest">Career Timeline</span></div>
+<h2 class="text-4xl font-extrabold text-slate-900 mt-4">Work Experience</h2>
+<p class="text-slate-500 mt-3 max-w-xl">Hands-on, impact-first experience building organic growth for SaaS — from strategy to execution.</p>
+</div>
+<div class="relative border-l-2 border-blue-100 ml-4 pl-8 space-y-12">
+<div class="relative timeline-dot aos">
+<div class="flex flex-wrap items-center gap-3 mb-4">
+<h3 class="text-xl font-bold text-slate-900">Digital Marketing Executive</h3>
+<span class="bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full border border-blue-100">Current Role</span>
+</div>
+<div class="flex items-center gap-2 mb-5 text-slate-500 text-sm">
+<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+<span class="font-medium text-slate-700">ContentStudio.io</span><span>·</span><span>January 2024 – Present</span><span>·</span><span>SaaS / B2B</span>
+</div>
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+<p class="text-slate-600 text-sm mb-5 leading-relaxed">Owned end-to-end organic growth strategy for a global SaaS content marketing platform — driving traffic, authority, and AI-search visibility at scale.</p>
+<div class="space-y-3">
+<div class="flex gap-3"><div class="flex-shrink-0 mt-1 w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center"><svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div><p class="text-slate-700 text-sm leading-relaxed"><span class="font-semibold text-slate-900">Traffic Growth:</span> Drove a 25% year-over-year increase in organic traffic by owning end-to-end SEO strategy — content optimisation, internal link architecture redesign, and keyword-to-intent mapping at scale.</p></div>
+<div class="flex gap-3"><div class="flex-shrink-0 mt-1 w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center"><svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div><p class="text-slate-700 text-sm leading-relaxed"><span class="font-semibold text-slate-900">Domain Authority:</span> Grew DA by 10 points in under 12 months through a structured link acquisition program spanning digital PR, unlinked brand-mention recovery, and editorial placements with high-authority MarTech publications.</p></div>
+<div class="flex gap-3"><div class="flex-shrink-0 mt-1 w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center"><svg class="w-3 h-3 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div><p class="text-slate-700 text-sm leading-relaxed"><span class="font-semibold text-slate-900">AI-Search Visibility:</span> Owned production of 15+ AEO and GEO-optimised blog posts applying entity-based writing and structured content formatting — directly improving AI Overview visibility for priority brand keywords.</p></div>
+<div class="flex gap-3"><div class="flex-shrink-0 mt-1 w-5 h-5 bg-green-100 rounded-full flex items-center justify-center"><svg class="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div><p class="text-slate-700 text-sm leading-relaxed"><span class="font-semibold text-slate-900">Topical Authority:</span> Architected topical authority across 6 content clusters using hub-and-spoke structures — eliminating cannibalization and driving consistent ranking gains on competitive head terms.</p></div>
+<div class="flex gap-3"><div class="flex-shrink-0 mt-1 w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center"><svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div><p class="text-slate-700 text-sm leading-relaxed"><span class="font-semibold text-slate-900">Technical SEO:</span> Led end-to-end technical SEO auditing with Screaming Frog — resolving crawl errors, redirect chains, and indexation gaps to optimise crawl budget and accelerate content indexing.</p></div>
+<div class="flex gap-3"><div class="flex-shrink-0 mt-1 w-5 h-5 bg-orange-100 rounded-full flex items-center justify-center"><svg class="w-3 h-3 text-orange-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div><p class="text-slate-700 text-sm leading-relaxed"><span class="font-semibold text-slate-900">Outreach Scale:</span> Built and managed 300+ outreach partnerships, achieving a 35% response rate through targeted guest posting, broken-link, and resource-link campaigns with high-authority publishers.</p></div>
+<div class="flex gap-3"><div class="flex-shrink-0 mt-1 w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center"><svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div><p class="text-slate-700 text-sm leading-relaxed"><span class="font-semibold text-slate-900">Revenue Impact:</span> Generated direct sponsorship revenue by owning negotiation and execution of paid link insertion deals and editorial placements with premium publishers.</p></div>
+<div class="flex gap-3"><div class="flex-shrink-0 mt-1 w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center"><svg class="w-3 h-3 text-slate-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div><p class="text-slate-700 text-sm leading-relaxed"><span class="font-semibold text-slate-900">Analytics &amp; Reporting:</span> Led monthly SEO performance reporting via Google Search Console and Usermaven, translating organic data into prioritised recommendations that shaped quarterly strategy.</p></div>
+</div>
+<div class="flex flex-wrap gap-2 mt-5 pt-5 border-t border-slate-200">
+<span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full font-medium">Technical SEO</span>
+<span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full font-medium">Link Building</span>
+<span class="bg-purple-50 text-purple-700 text-xs px-2.5 py-1 rounded-full font-medium">GEO / AEO</span>
+<span class="bg-green-50 text-green-700 text-xs px-2.5 py-1 rounded-full font-medium">Content Strategy</span>
+<span class="bg-orange-50 text-orange-700 text-xs px-2.5 py-1 rounded-full font-medium">Outreach</span>
+<span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">Analytics</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WORK / PROJECTS -->
+<section id="work" class="py-24 bg-slate-50">
+<div class="max-w-6xl mx-auto px-6">
+<div class="mb-14 aos">
+<div class="flex items-center gap-3 mb-3"><div class="section-divider"></div><span class="text-blue-600 text-sm font-semibold uppercase tracking-widest">Work &amp; Projects</span></div>
+<h2 class="text-4xl font-extrabold text-slate-900 mt-4">What I've Built</h2>
+<p class="text-slate-500 mt-3 max-w-xl">Real work with real impact. From link campaigns to content programmes, each project drives measurable organic growth.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<!-- Project 1: Backlinks Campaign -->
+<div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm card-hover aos flex flex-col">
+<div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg></div>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-slate-900 mb-2">High-Authority Backlink Programme</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-4">Designed and executed a full-scale backlink acquisition programme — securing placements on DR 68–87 domains including RingCentral, Mailmodo, BSSCommerce, ElasticEmail, and 50+ other high-authority MarTech and SaaS publications through targeted outreach.</p>
+<div class="space-y-1.5">
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0"></span>DR 68–87 placements secured</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0"></span>300+ outreach partnerships built</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0"></span>35% outreach response rate achieved</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0"></span>Domain Authority grew +10 points in 12 months</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+<span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full font-medium">Link Building</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">Digital PR</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">Outreach</span>
+</div>
+</div>
+
+<!-- Project 2: Paid Collaborations -->
+<div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm card-hover aos flex flex-col">
+<div class="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-slate-900 mb-2">Paid Editorial Collaboration Management</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-4">Owned the full lifecycle of paid link placements — from publisher prospecting and negotiation to deal execution and tracking. Secured guest posts, link insertions, and product mentions on premium platforms including SurferSEO, Stripo, Speedypaper, and others.</p>
+<div class="space-y-1.5">
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-green-500 rounded-full flex-shrink-0"></span>Guest posts ($400–$470/placement)</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-green-500 rounded-full flex-shrink-0"></span>Link insertions ($180–$480/placement)</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-green-500 rounded-full flex-shrink-0"></span>Product mentions on industry-authority sites</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-green-500 rounded-full flex-shrink-0"></span>Direct sponsorship revenue generated for brand</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+<span class="bg-green-50 text-green-700 text-xs px-2.5 py-1 rounded-full font-medium">Paid Collaborations</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">Negotiation</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">Publisher Relations</span>
+</div>
+</div>
+
+<!-- Project 3: Blog Content -->
+<div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm card-hover aos flex flex-col">
+<div class="w-10 h-10 bg-purple-50 rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg></div>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-slate-900 mb-2">GEO &amp; AEO Blog Content Programme</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-4">Led a blog content programme targeting high-value SaaS and social media marketing keywords with GEO and AEO-optimised articles — applying entity-based writing, E-E-A-T signals, and structured data to achieve AI Overview placements on priority terms.</p>
+<div class="space-y-1.5">
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full flex-shrink-0"></span>Topics: SaaS SEO, social media calendar, TikTok influencer marketing</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full flex-shrink-0"></span>AI content generators, social media analytics &amp; more</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full flex-shrink-0"></span>15+ AEO-optimised pieces delivered</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full flex-shrink-0"></span>Improved AI Overview appearance for brand keywords</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+<span class="bg-purple-50 text-purple-700 text-xs px-2.5 py-1 rounded-full font-medium">GEO / AEO</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">Content Strategy</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">Blog SEO</span>
+</div>
+</div>
+
+<!-- Project 4: Topical Authority -->
+<div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm card-hover aos flex flex-col">
+<div class="w-10 h-10 bg-orange-50 rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg></div>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-slate-900 mb-2">Topical Authority Architecture</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-4">Mapped and built topical authority across 6 content clusters using hub-and-spoke structures. Resolved cannibalization, strengthened internal linking, and systematically targeted competitive head terms to build SERP ownership in the social media marketing SaaS space.</p>
+<div class="space-y-1.5">
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-orange-500 rounded-full flex-shrink-0"></span>6 content clusters architected</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-orange-500 rounded-full flex-shrink-0"></span>Cannibalization eliminated across key topics</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-orange-500 rounded-full flex-shrink-0"></span>Consistent ranking gains on competitive terms</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+<span class="bg-orange-50 text-orange-700 text-xs px-2.5 py-1 rounded-full font-medium">Content Architecture</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">Keyword Strategy</span>
+</div>
+</div>
+
+<!-- Project 5: Technical SEO Audit -->
+<div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm card-hover aos flex flex-col">
+<div class="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-slate-900 mb-2">Technical SEO Audit &amp; Remediation</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-4">Conducted end-to-end technical SEO audits using Screaming Frog — identifying and resolving crawl errors, redirect chains, duplicate content, and indexation gaps. Optimised 30+ content pages with structured data markup, rewritten metadata, and improved heading hierarchy.</p>
+<div class="space-y-1.5">
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-red-500 rounded-full flex-shrink-0"></span>30+ pages optimised with structured data &amp; metadata</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-red-500 rounded-full flex-shrink-0"></span>Crawl budget optimised via redirect chain resolution</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-red-500 rounded-full flex-shrink-0"></span>Indexation gaps resolved; accelerated content indexing</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+<span class="bg-red-50 text-red-700 text-xs px-2.5 py-1 rounded-full font-medium">Technical SEO</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">Screaming Frog</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">On-Page SEO</span>
+</div>
+</div>
+
+<!-- Project 6: SEO Reporting -->
+<div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm card-hover aos flex flex-col">
+<div class="w-10 h-10 bg-teal-50 rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-slate-900 mb-2">SEO Analytics &amp; Performance Reporting</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-4">Built and led monthly SEO performance reporting frameworks using Google Search Console and Usermaven. Translated organic traffic trends, keyword movement, and click-through data into prioritised strategic recommendations that shaped quarterly roadmaps.</p>
+<div class="space-y-1.5">
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-teal-500 rounded-full flex-shrink-0"></span>GSC + Usermaven reporting dashboards built</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-teal-500 rounded-full flex-shrink-0"></span>Monthly reports shaping quarterly strategy</div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><span class="w-1.5 h-1.5 bg-teal-500 rounded-full flex-shrink-0"></span>Competitor benchmarking analysis included</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+<span class="bg-teal-50 text-teal-700 text-xs px-2.5 py-1 rounded-full font-medium">Analytics</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">GSC</span>
+<span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full font-medium">Usermaven</span>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<div class="mb-14 aos">
+<div class="flex items-center gap-3 mb-3"><div class="section-divider"></div><span class="text-blue-600 text-sm font-semibold uppercase tracking-widest">Skills</span></div>
+<h2 class="text-4xl font-extrabold text-slate-900 mt-4">Areas of Expertise</h2>
+<p class="text-slate-500 mt-3 max-w-xl">A complete, interconnected skill set — from technical infrastructure to content and outreach.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center"><svg class="w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg></div><h3 class="font-bold text-slate-900">On-Page SEO</h3></div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Content Optimisation</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Meta Architecture</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">H-Tag Hierarchy</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">FAQ Schema</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Article Schema</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Internal Linking</span>
+</div>
+</div>
+
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center"><svg class="w-4 h-4 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div><h3 class="font-bold text-slate-900">GEO &amp; AEO</h3></div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">AI Overview Targeting</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">LLM Citation Optimisation</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">E-E-A-T</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Entity-Based SEO</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Structured Content</span>
+</div>
+</div>
+
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center"><svg class="w-4 h-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h3 class="font-bold text-slate-900">Technical SEO</h3></div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Crawl Audits</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Redirect Chains</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Indexation Gap Analysis</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Crawl Budget Management</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Core Web Vitals</span>
+</div>
+</div>
+
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center"><svg class="w-4 h-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg></div><h3 class="font-bold text-slate-900">Content Strategy</h3></div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Topical Cluster Architecture</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Keyword-Intent Mapping</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Content Briefs</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Gap Analysis</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Hub-and-Spoke</span>
+</div>
+</div>
+
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center"><svg class="w-4 h-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h3 class="font-bold text-slate-900">Off-Page &amp; Outreach</h3></div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Digital PR</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Guest Posting</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Broken-Link Campaigns</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Unlinked Mention Recovery</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Resource Link Building</span>
+</div>
+</div>
+
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center"><svg class="w-4 h-4 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div><h3 class="font-bold text-slate-900">Analytics &amp; Reporting</h3></div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Google Search Console</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Usermaven</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Google Analytics</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Competitor Benchmarking</span>
+<span class="skill-pill bg-white border border-slate-200 text-slate-600 text-xs px-3 py-1.5 rounded-full font-medium">Performance Reporting</span>
+</div>
+</div>
+
+</div>
+
+<!-- Tools Row -->
+<div class="mt-12 bg-slate-50 rounded-2xl p-8 border border-slate-100 aos">
+<h3 class="font-bold text-slate-900 mb-6 text-center text-lg">Tools &amp; Platforms</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">SEO &amp; Audit</p><div class="flex flex-wrap gap-2"><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">Ahrefs</span><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">SEMrush</span><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">Screaming Frog</span><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">Moz</span><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">GSC</span></div></div>
+<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">Outreach</p><div class="flex flex-wrap gap-2"><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">Hunter.io</span><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">Snov.io</span><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">Closely</span><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">SalesHandy</span></div></div>
+<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">Content</p><div class="flex flex-wrap gap-2"><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">ContentStudio</span><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">ContentPen</span></div></div>
+<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">Analytics</p><div class="flex flex-wrap gap-2"><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">Usermaven</span><span class="bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1.5 rounded-full font-medium">Google Analytics</span></div></div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="py-24 bg-slate-900">
+<div class="max-w-6xl mx-auto px-6">
+<div class="mb-14 aos text-center">
+<div class="flex items-center justify-center gap-3 mb-3"><div class="section-divider"></div><span class="text-blue-400 text-sm font-semibold uppercase tracking-widest">Key Wins</span><div class="section-divider"></div></div>
+<h2 class="text-4xl font-extrabold text-white mt-4">Achievements That Matter</h2>
+<p class="text-slate-400 mt-3 max-w-xl mx-auto">Results-oriented work that created compounding organic value — not vanity metrics.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-blue-600/20 rounded-xl flex items-center justify-center"><span class="text-2xl font-extrabold text-blue-400">25%</span></div></div>
+<h3 class="font-bold text-white mb-2">Organic Traffic Growth</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Drove a 25% year-over-year increase in organic traffic by owning full-funnel SEO — from content strategy to technical infrastructure — across a competitive SaaS product.</p>
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-purple-600/20 rounded-xl flex items-center justify-center"><span class="text-2xl font-extrabold text-purple-400">+10</span></div></div>
+<h3 class="font-bold text-white mb-2">Domain Authority Points in 12 Months</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Grew Domain Authority by 10 points in under a year through a structured link acquisition programme — digital PR, brand-mention recovery, and editorial placements with high-authority MarTech publications.</p>
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-green-600/20 rounded-xl flex items-center justify-center"><span class="text-2xl font-extrabold text-green-400">300+</span></div></div>
+<h3 class="font-bold text-white mb-2">Outreach Partnerships Built</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Built and managed 300+ publisher relationships, achieving a 35% response rate through personalised guest posting, broken-link, and resource-link campaigns with high-authority domains.</p>
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-orange-600/20 rounded-xl flex items-center justify-center"><span class="text-2xl font-extrabold text-orange-400">35%</span></div></div>
+<h3 class="font-bold text-white mb-2">Outreach Response Rate</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Achieved a 35% cold outreach response rate — well above the industry average — through hyper-personalised messaging, offer positioning, and strategic timing across outreach campaigns.</p>
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-teal-600/20 rounded-xl flex items-center justify-center"><span class="text-2xl font-extrabold text-teal-400">15+</span></div></div>
+<h3 class="font-bold text-white mb-2">AEO &amp; GEO-Optimised Articles</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Produced 15+ AI-search-optimised blog posts using entity-based writing, structured data, and E-E-A-T signals — directly improving brand presence in Google's AI Overviews for priority keywords.</p>
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 card-hover aos">
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-red-600/20 rounded-xl flex items-center justify-center"><span class="text-2xl font-extrabold text-red-400">30+</span></div></div>
+<h3 class="font-bold text-white mb-2">Pages Optimised for SERP Performance</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Optimised 30+ content pages with structured data markup, rewritten metadata, and improved heading architecture — strengthening SERP positioning across core commercial and informational target keywords.</p>
+</div>
+
+</div>
+
+<!-- Trust Quote -->
+<div class="mt-16 bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/20 rounded-2xl p-8 text-center aos">
+<p class="text-slate-200 text-xl font-medium leading-relaxed italic max-w-3xl mx-auto">"SEO isn't about tricking Google. It's about building content and authority that genuinely serves searchers — and then making sure Google can find it."</p>
+<div class="mt-4 font-semibold text-blue-300">— Salahuddin Umer</div>
+</div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section class="py-16 bg-slate-50">
+<div class="max-w-6xl mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 aos">
+<div>
+<div class="flex items-center gap-3 mb-2"><div class="section-divider"></div><span class="text-blue-600 text-sm font-semibold uppercase tracking-widest">Education</span></div>
+<h3 class="text-2xl font-extrabold text-slate-900 mt-3">Bachelor of Business Administration</h3>
+<p class="text-slate-500 mt-1">Iqra University, Islamabad &nbsp;·&nbsp; 2020 – 2024</p>
+</div>
+<div class="flex gap-4">
+<div class="bg-white rounded-xl px-6 py-4 border border-slate-100 shadow-sm text-center"><div class="text-2xl font-bold text-blue-600">BBA</div><div class="text-xs text-slate-500 mt-1">Degree</div></div>
+<div class="bg-white rounded-xl px-6 py-4 border border-slate-100 shadow-sm text-center"><div class="text-2xl font-bold text-blue-600">2024</div><div class="text-xs text-slate-500 mt-1">Graduated</div></div>
+<div class="bg-white rounded-xl px-6 py-4 border border-slate-100 shadow-sm text-center"><div class="text-2xl font-bold text-blue-600">2+</div><div class="text-xs text-slate-500 mt-1">Yrs Experience</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<div class="max-w-3xl mx-auto">
+<div class="mb-10 text-center aos">
+<div class="flex items-center justify-center gap-3 mb-3"><div class="section-divider"></div><span class="text-blue-600 text-sm font-semibold uppercase tracking-widest">Get In Touch</span><div class="section-divider"></div></div>
+<h2 class="text-4xl font-extrabold text-slate-900 mt-4">Let's Work Together</h2>
+<p class="text-slate-500 mt-3 max-w-lg mx-auto">Whether you're a SaaS company looking for SEO leadership, an agency needing a specialist, or a founder wanting to build organic — I'd love to hear from you.</p>
+</div>
+
+<div class="grid md:grid-cols-2 gap-8 mb-10 aos">
+<a href="mailto:salahuddinumer08@gmail.com" class="flex items-center gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 hover:bg-blue-50 transition-all group card-hover">
+<div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-200 transition-colors">
+<svg class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+</div>
+<div><div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-0.5">Email</div><div class="font-semibold text-slate-800 text-sm">salahuddinumer08@gmail.com</div></div>
+</a>
+<a href="https://www.linkedin.com/in/salahuddin-umer" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 hover:bg-blue-50 transition-all group card-hover">
+<div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-200 transition-colors">
+<svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</div>
+<div><div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-0.5">LinkedIn</div><div class="font-semibold text-slate-800 text-sm">linkedin.com/in/salahuddin-umer</div></div>
+</a>
+</div>
+
+<!-- Contact Form -->
+<div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 aos">
+<h3 class="font-bold text-slate-900 text-lg mb-6">Send a Message</h3>
+<form id="contactForm" class="space-y-5" onsubmit="handleSubmit(event)">
+<div class="grid sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-sm font-medium text-slate-700 mb-1.5">Your Name</label>
+<input type="text" id="fname" placeholder="e.g. John Smith" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white transition-all" required/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 mb-1.5">Your Email</label>
+<input type="email" id="femail" placeholder="you@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white transition-all" required/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 mb-1.5">Subject</label>
+<input type="text" id="fsubject" placeholder="e.g. SaaS SEO Consulting Enquiry" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white transition-all"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 mb-1.5">Message</label>
+<textarea id="fmessage" rows="4" placeholder="Tell me about your project, goals, and what you're looking to achieve..." class="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white transition-all resize-none" required></textarea>
+</div>
+<button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-lg shadow-blue-500/20 hover:shadow-blue-600/30 flex items-center justify-center gap-2">
+<span>Send Message</span>
+<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+</button>
+</form>
+<div id="formSuccess" class="hidden mt-4 p-4 bg-green-50 border border-green-200 rounded-xl text-green-700 text-sm font-medium text-center">
+Thanks for reaching out! I'll get back to you within 24 hours.
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 py-10 border-t border-slate-800">
+<div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="font-bold text-white text-lg tracking-tight"><span style="background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">S</span>alahuddin<span class="text-slate-500 font-normal">.</span></div>
+<p class="text-slate-500 text-sm text-center">SaaS SEO &amp; Digital Marketing Executive &nbsp;·&nbsp; Rawalpindi, Pakistan</p>
+<div class="flex items-center gap-4">
+<a href="mailto:salahuddinumer08@gmail.com" class="text-slate-400 hover:text-white transition-colors text-sm">salahuddinumer08@gmail.com</a>
+<a href="https://www.linkedin.com/in/salahuddin-umer" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 transition-colors">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+</div>
+</div>
+</footer>
+
+<script>
+// Scroll animation observer
+var observer = new IntersectionObserver(function(entries){
+entries.forEach(function(entry){
+if(entry.isIntersecting){entry.target.classList.add('visible');}
+});
+},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.aos').forEach(function(el){observer.observe(el);});
+
+// Contact form
+function handleSubmit(e){
+e.preventDefault();
+var btn = e.target.querySelector('button[type="submit"]');
+btn.innerHTML = '<svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg><span>Sending...</span>';
+setTimeout(function(){
+btn.innerHTML = '<span>Send Message</span><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>';
+document.getElementById('formSuccess').classList.remove('hidden');
+document.getElementById('contactForm').reset();
+setTimeout(function(){document.getElementById('formSuccess').classList.add('hidden');},5000);
+},1500);
+}
+
+// Navbar scroll effect
+window.addEventListener('scroll', function(){
+var nav = document.getElementById('navbar');
+if(window.scrollY > 20){nav.style.boxShadow='0 2px 20px rgba(0,0,0,0.08)';}
+else{nav.style.boxShadow='none';}
+});
+</script>
+</body>
+</html>
