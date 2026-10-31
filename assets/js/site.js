@@ -55,7 +55,7 @@
     var tip = plot.querySelector(".chart-tip"), svg = plot.querySelector("svg"), cross = plot.querySelector(".c-cross");
     if (!tip || !svg) return;
     plot.querySelectorAll(".c-hit").forEach(function (hit) {
-      var t = hit.querySelector("title"); if (t) { hit.setAttribute("aria-label", t.textContent); t.remove(); }
+      var t = hit.querySelector("title"); if (t) t.remove(); // avoid a duplicate native tooltip; data is in the table view
       hit.addEventListener("mouseenter", function () {
         var box = hit.getBoundingClientRect(), pb = plot.getBoundingClientRect();
         tip.textContent = hit.getAttribute("data-tip");
