@@ -120,6 +120,7 @@ section { padding: var(--s8) 0; border-top: 1px solid var(--rule); }
 /* About */
 .about-grid { display: grid; gap: var(--s6); }
 @media (min-width: 52rem) { .about-grid { grid-template-columns: 12rem 1fr; gap: var(--s7); } }
+.about-side { display: grid; gap: var(--s5); align-content: start; }
 .portrait { width: 12rem; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 15%; border-radius: 8px; background: var(--surface); }
 .prose { font-family: var(--serif); font-size: 1.125rem; line-height: 1.7; max-width: var(--prose); }
 .prose p { margin-bottom: var(--s5); }
