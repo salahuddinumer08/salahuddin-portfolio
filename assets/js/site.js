@@ -48,3 +48,22 @@
     });
   }
 })();
+
+// Chart hover tooltips (progressive enhancement; native <title> tooltips and table views work without JS)
+(function () {
+  document.querySelectorAll(".chart-plot").forEach(function (plot) {
+    var tip = plot.querySelector(".chart-tip"), svg = plot.querySelector("svg"), cross = plot.querySelector(".c-cross");
+    if (!tip || !svg) return;
+    plot.querySelectorAll(".c-hit").forEach(function (hit) {
+      var t = hit.querySelector("title"); if (t) { hit.setAttribute("aria-label", t.textContent); t.remove(); }
+      hit.addEventListener("mouseenter", function () {
+        var box = hit.getBoundingClientRect(), pb = plot.getBoundingClientRect();
+        tip.textContent = hit.getAttribute("data-tip");
+        tip.style.left = (box.left - pb.left + box.width / 2) + "px";
+        tip.hidden = false;
+        if (cross) { var vb = svg.viewBox.baseVal, x = +hit.getAttribute("x") + (+hit.getAttribute("width")) / 2; cross.setAttribute("x1", x); cross.setAttribute("x2", x); cross.style.opacity = 1; void vb; }
+      });
+      hit.addEventListener("mouseleave", function () { tip.hidden = true; if (cross) cross.style.opacity = 0; });
+    });
+  });
+})();
