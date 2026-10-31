@@ -242,3 +242,4 @@ section { padding: var(--s8) 0; border-top: 1px solid var(--rule); }
 .chart-table th, .chart-table td { text-align: left; padding: .2rem 1rem .2rem 0; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
 .case-data { min-width: 0; }
 .case-charts { margin-bottom: var(--s4); }
+@media (min-width: 52rem) { .chart-grid.single { grid-template-columns: minmax(0, 36rem); } }
